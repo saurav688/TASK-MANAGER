@@ -36,14 +36,14 @@ app.get('/api/health', (req, res) => {
 });
 
 // ==========================================
-// SERVE REACT FRONTEND
+// SERVE REACT FRONTEND (Create React App builds to /build)
 // ==========================================
 
-const frontendPath = path.join(__dirname, '../frontend/dist');
+const frontendPath = path.join(__dirname, '../frontend/build');
 
 app.use(express.static(frontendPath));
 
-// React SPA fallback
+// React SPA fallback — serves index.html for all non-API routes
 app.use((req, res) => {
     res.sendFile(path.join(frontendPath, 'index.html'));
 });
