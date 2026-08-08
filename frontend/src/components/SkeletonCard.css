@@ -1,0 +1,20 @@
+.skeleton-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border-left: 4px solid var(--border);
+}
+.skeleton-line {
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+.sk-title   { height: 16px; width: 65%; margin-bottom: 10px; }
+.sk-desc1   { height: 12px; width: 90%; margin-bottom: 6px; }
+.sk-desc2   { height: 12px; width: 70%; margin-bottom: 16px; }
+.sk-meta    { display: flex; gap: 8px; }
+.sk-badge   { height: 20px; width: 64px; border-radius: 99px; }
+.sk-badge2  { height: 20px; width: 80px; border-radius: 99px; }
+.sk-date    { height: 20px; width: 100px; border-radius: 99px; margin-left: auto; }
