@@ -4,6 +4,10 @@ node_modules/
 build/
 dist/
 
+# Editor
+.vscode/
+.idea/
+
 # Backend
 backend/node_modules/
 
